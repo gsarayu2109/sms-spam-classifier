@@ -4,10 +4,9 @@ import string
 import nltk
 import os
 
-nltk.data.path.append(os.getcwd())
-
-nltk.download('punkt')
-nltk.download('stopwords')
+nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+nltk.download('stopwords', quiet=True)
 
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
